@@ -1,0 +1,49 @@
+/* google map */
+.googlebox{
+    @include row;
+    @include basic(100vw,60vh,0 auto,0);
+    .google-box1{
+        margin-left: 3em;
+    }
+    .google-box1{
+        font-size: 1.5em;
+        color: $color3;
+        border: $color3 solid 1px;
+        margin: 2em;
+        padding: 2em;
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: $color3;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .googlebox{
+        display: block;
+        width: 375px;
+    }
+    .google-box1{
+        width: 95vw;
+        margin: 0;
+        border: none;
+    }
+    .googlelink{
+        width: 100vw;
+        height: 50vh;
+    }
+    
+}
+
+@media only screen and (min-width: 768px){
+   .googlebox{
+       width: 100vw;
+   }
+   .googlelink{
+       width: 55vw;
+   }
+}
+

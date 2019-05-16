@@ -1,12 +1,3 @@
-body {
-  font-family: "Raleway", sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: white;
-  width: 100vw;
-  height: 100vh;
-}
-
 /* labox */
 @media only screen and (max-width: 375px) {
   .la-picbox {
@@ -16,7 +7,63 @@ body {
 
 @media only screen and (min-width: 768px) {
   .la-picbox {
-    display: none;
+    position: relative;
+    top: 20vh;
+    width: 100vw;
+    height: 54vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+  .la-item {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 20vw;
+    height: 18vh;
+    margin: 0;
+    padding: 0;
+    background: #00b7ee;
+  }
+  .la-item p {
+    font-family: "roboto", sans-serif;
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+  }
+  .la-itemcolor1 {
+    background: #01446e;
+  }
+  .la-itemcolor2 {
+    background: #ff7b42;
+  }
+  .la-itemcolor3 {
+    background: #858f8b;
   }
 }
 
@@ -161,20 +208,22 @@ body {
   }
 }
 
+/* md */
 @media only screen and (min-width: 768px) {
   .la-para-container {
     margin-bottom: 0;
     padding-bottom: 0;
-    height: 500px;
+    height: 300px;
   }
   .la-parallax {
     width: 100%;
-    height: 400px;
+    height: 200px;
     margin: 0 auto;
     padding: 0;
   }
   .la-citybox {
     width: 100vw;
+    height: 30vh;
     margin: 0;
     padding: 0;
   }
@@ -189,6 +238,7 @@ body {
   }
 }
 
+/* lg */
 @media only screen and (min-width: 992px) {
   .la-para-container {
     width: 100vw;
@@ -312,6 +362,38 @@ body {
   }
 }
 
+@media only screen and (min-width: 992px) {
+  .la-roundbox {
+    width: 50vw;
+    height: 20vh;
+    margin: 0 auto;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 3em;
+  }
+}
+
 /* planimg */
 .la-master {
   width: 100%;
@@ -340,7 +422,7 @@ body {
   height: 100vh;
   margin: 0 auto;
   padding: 0;
-  background: url(./img/swa4.jpg) no-repeat center;
+  background: url(./img/swa4.jpg) no-repeat bottom;
   background-size: contain;
 }
 
@@ -412,8 +494,12 @@ body {
     height: 500px;
     background-size: 90%;
     background-position-x: 2em;
+    position: relative;
+    top: 10em;
   }
   .la-street {
+    position: relative;
+    top: 8em;
     height: 50vh;
   }
 }
@@ -522,19 +608,16 @@ body {
 
 /* linttitle */
 .linetitle {
-  display: inline-block;
-  text-align: left;
-  width: 60vw;
-  padding-right: 2em;
-  text-transform: uppercase;
-  font-size: 2em;
-  color: #0f357a;
+  color: #58b422;
+  font-size: 2.25em;
+  font-weight: 80;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  border-bottom: 1px solid #58b422;
   position: relative;
+  right: 45vw;
   text-align: right;
-  border-bottom: 1px solid #0f357a;
-  position: relative;
-  top: -2em;
-  left: -20vw;
+  width: 100vw;
 }
 
 .linetitleh2 {
@@ -546,6 +629,7 @@ body {
   border-bottom: 1px solid #58b422;
   position: relative;
   right: 45vw;
+  top: 3em;
   text-align: right;
   width: 100vw;
 }

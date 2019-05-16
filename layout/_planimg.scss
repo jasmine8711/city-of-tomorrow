@@ -1,0 +1,104 @@
+.la-master{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    background-color: #fff;
+    background-image:url(./img/concept.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position-x: 250px;
+   
+}
+
+.la-street{
+    @include basic(55vw,100vh,0 auto,0);
+    background: url(./img/swa4.jpg)  no-repeat bottom;
+    background-size: contain;
+        p{
+            display: inline-block;
+            margin:0 auto 0 0;
+            color:$color3;
+            font-size: 1.5em;
+            span{
+                font-size: 2.5em;
+                }
+
+        }
+}
+.street-box2
+{
+    display: flex;
+    width: 55%;
+    text-align: center;
+    @include vCenter;
+    margin: 0 auto;
+    img{
+        width: 55vw;
+        margin-bottom: 5em;
+        @media only screen and (max-width: 375px){
+            width: 300px;
+        }
+        }
+}
+@media only screen and (max-width: 375px){
+    .la-master{
+        width: 375px;
+        height: 275px;
+        background-image:url(./img/concept.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-x: 0;
+        position: relative;
+        top: 300px;
+    }
+    .la-street{
+        display: none;
+    }
+}
+    
+
+@media only screen and (min-width: 768px){
+    .la-master{
+        width: 768px;
+        height: 500px;
+        background-size: 90%;
+        background-position-x: 2em;
+        position: relative;
+        top: 10em;
+    }
+    .la-street{
+        position: relative;
+        top: 8em;
+        height: 50vh;
+    }
+}
+@media only screen and (min-width: 992px){
+    .la-master{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        background-color: #fff;
+        background-image:url(./img/concept.png);
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position-x: 250px;
+    }
+    .la-street{
+       height: 500px;
+    }
+}
+
+
+
+
+
+
+    
+
+

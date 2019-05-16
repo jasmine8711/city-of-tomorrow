@@ -1,0 +1,41 @@
+/* roundbox */
+.la-roundbox{
+    @include basic(50vw,20vh,0 auto,0);
+    @include row;
+    justify-content: space-around;
+    margin-bottom: 3em;
+}
+.la-r{
+    @include vCenter;
+    img{
+        width: 100px;
+        clip-path: circle(50% at 50% 50%);
+    }
+    p{
+        text-align: center;
+        text-transform: uppercase;
+        color: $color5;
+        font-size: 1.5em;
+        margin-top: 1em;
+    }
+}
+@media only screen and (max-width: 375px){
+    .la-roundbox{
+        width: 100%;
+        display: none;
+    }
+
+}
+@media only screen and (min-width: 768px){
+    .la-roundbox{
+     display: none;
+    }
+}
+@media only screen and (min-width: 992px){
+    .la-roundbox{
+        @include basic(50vw,20vh,0 auto,0);
+        @include row;
+        justify-content: space-around;
+        margin-bottom: 3em;
+    }
+}
