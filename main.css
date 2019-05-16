@@ -1,0 +1,552 @@
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* labox */
+@media only screen and (max-width: 375px) {
+  .la-picbox {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .la-picbox {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .la-picbox {
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+  .la-item {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 20vw;
+    height: 33.33vh;
+    margin: 0;
+    padding: 0;
+    background: #00b7ee;
+  }
+  .la-item p {
+    font-family: "roboto", sans-serif;
+    color: white;
+    font-size: 2em;
+    text-transform: uppercase;
+  }
+  .la-itemcolor1 {
+    background: #01446e;
+  }
+  .la-itemcolor2 {
+    background: #ff7b42;
+  }
+  .la-itemcolor3 {
+    background: #858f8b;
+  }
+}
+
+/* parallax */
+/* parallax */
+.la-para-container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.la-parallax {
+  width: 100vw;
+  height: 60vh;
+  margin: 0 auto;
+  padding: 0;
+  background: url(./img/cityplan.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.la-citybox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 55vw;
+  margin: 0 auto;
+  margin-top: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.la-citybox .la-p {
+  text-align: left;
+  font-size: 1.5em;
+  margin: 2em auto;
+  color: #464545;
+  width: 55vw;
+  padding: 0;
+}
+
+.la-citybox .la-p span {
+  font-size: 2.5em;
+}
+
+.la-citybox img {
+  width: 15vw;
+  height: 160px;
+}
+
+/* sm */
+@media only screen and (max-width: 375px) {
+  .la-para-container {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 400px;
+  }
+  .la-parallax {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .la-citybox {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .la-citybox .la-p {
+    width: 95vw;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .la-citybox img {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .la-para-container {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 500px;
+  }
+  .la-parallax {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .la-citybox {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  .la-citybox .la-p {
+    width: 55vw;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 2em;
+  }
+  .la-citybox img {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .la-para-container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .la-parallax {
+    width: 100vw;
+    height: 60vh;
+    margin: 0 auto;
+    padding: 0;
+    background: url(./img/cityplan.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .la-citybox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    width: 55vw;
+    margin: 0 auto;
+    margin-top: 2em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .la-citybox .la-p {
+    text-align: left;
+    font-size: 1.5em;
+    margin: 2em auto;
+    color: #464545;
+    width: 55vw;
+    padding: 0;
+  }
+  .la-citybox .la-p span {
+    font-size: 2.5em;
+  }
+}
+
+/* roundbox */
+/* roundbox */
+.la-roundbox {
+  width: 50vw;
+  height: 20vh;
+  margin: 0 auto;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 3em;
+}
+
+.la-r {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.la-r img {
+  width: 100px;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+}
+
+.la-r p {
+  text-align: center;
+  text-transform: uppercase;
+  color: #ff7b42;
+  font-size: 1.5em;
+  margin-top: 1em;
+}
+
+@media only screen and (max-width: 375px) {
+  .la-roundbox {
+    width: 100%;
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .la-roundbox {
+    display: none;
+  }
+}
+
+/* planimg */
+.la-master {
+  width: 100%;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  background-color: #fff;
+  background-image: url(./img/concept.png);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position-x: 250px;
+}
+
+.la-street {
+  width: 55vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  background: url(./img/swa4.jpg) no-repeat center;
+  background-size: contain;
+}
+
+.la-street p {
+  display: inline-block;
+  margin: 0 auto 0 0;
+  color: #464545;
+  font-size: 1.5em;
+}
+
+.la-street p span {
+  font-size: 2.5em;
+}
+
+.street-box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 55%;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.street-box2 img {
+  width: 55vw;
+  margin-bottom: 5em;
+}
+
+@media only screen and (max-width: 375px) {
+  .street-box2 img {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .la-master {
+    width: 375px;
+    height: 275px;
+    background-image: url(./img/concept.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: 0;
+    position: relative;
+    top: 300px;
+  }
+  .la-street {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .la-master {
+    width: 768px;
+    height: 500px;
+    background-size: 90%;
+    background-position-x: 2em;
+  }
+  .la-street {
+    height: 50vh;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .la-master {
+    width: 100%;
+    height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    background-color: #fff;
+    background-image: url(./img/concept.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position-x: 250px;
+  }
+  .la-street {
+    height: 500px;
+  }
+}
+
+/* google map */
+/* google map */
+.googlebox {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 100vw;
+  height: 60vh;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.googlebox .google-box1 {
+  margin-left: 3em;
+}
+
+.googlebox .google-box1 {
+  font-size: 1.5em;
+  color: #464545;
+  border: #464545 solid 1px;
+  margin: 2em;
+  padding: 2em;
+}
+
+.googlebox .google-box1 li {
+  list-style: none;
+}
+
+.googlebox .google-box1 a {
+  text-decoration: none;
+  color: #464545;
+}
+
+@media only screen and (max-width: 375px) {
+  .googlebox {
+    display: block;
+    width: 375px;
+  }
+  .google-box1 {
+    width: 95vw;
+    margin: 0;
+    border: none;
+  }
+  .googlelink {
+    width: 100vw;
+    height: 50vh;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .googlebox {
+    width: 100vw;
+  }
+  .googlelink {
+    width: 55vw;
+  }
+}
+
+/* linttitle */
+.linetitle {
+  display: inline-block;
+  text-align: left;
+  width: 60vw;
+  padding-right: 2em;
+  text-transform: uppercase;
+  font-size: 2em;
+  color: #0f357a;
+  position: relative;
+  text-align: right;
+  border-bottom: 1px solid #0f357a;
+  position: relative;
+  top: -2em;
+  left: -20vw;
+}
+
+.linetitleh2 {
+  color: #58b422;
+  font-size: 2.25em;
+  font-weight: 80;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  border-bottom: 1px solid #58b422;
+  position: relative;
+  right: 45vw;
+  text-align: right;
+  width: 100vw;
+}
+/*# sourceMappingURL=main.css.map */
