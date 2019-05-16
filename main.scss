@@ -1,6 +1,8 @@
+body{
+    background: white;
+}
 @import"abstracts/color";
 @import"abstracts/mixins";
-@import"abstracts/font";
 
 /* labox */
 @import "layout/_labox.scss";

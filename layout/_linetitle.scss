@@ -1,23 +1,12 @@
 .linetitle{
-    color: $color2;
+    width: 100vw;
+    color: $color5;
     font-size: 2.25em;
     font-weight: 80;
-    margin-block-end: 1em;
-    border-bottom: 1px solid $color2;
+    border-bottom: 1px solid $color5;
     position: relative;
-    right: 45vw;
+    right: 22.5vw;
     text-align: right;
-    width: 100vw;
+    margin-right: 0;
 }
-.linetitleh2{
-        color: $color2;
-        font-size: 2.25em;
-        font-weight: 80;
-        margin-block-end: 1em;
-        border-bottom: 1px solid $color2;
-        position: relative;
-        right: 45vw;
-        top: 3em;
-        text-align: right;
-        width: 100vw;
-}
+

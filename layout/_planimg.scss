@@ -6,7 +6,7 @@
     justify-content: flex-start;
     align-content: flex-start;
     background-color: #fff;
-    background-image:url(./img/concept.png);
+    background-image:url(./assets/images/concept.png);
     background-repeat: no-repeat;
     background-size: 60%;
     background-position-x: 250px;
@@ -14,14 +14,13 @@
 }
 
 .la-street{
-    @include basic(55vw,100vh,0 auto,0);
-    background: url(./img/swa4.jpg)  no-repeat bottom;
+    @include basic(55vw,80vh,0 auto,0);
+    background: url(./assets/images/swa4.jpg)  no-repeat bottom;
     background-size: contain;
         p{
             display: inline-block;
             margin:0 auto 0 0;
             color:$color3;
-            font-size: 1.5em;
             span{
                 font-size: 2.5em;
                 }
@@ -34,20 +33,17 @@
     width: 55%;
     text-align: center;
     @include vCenter;
-    margin: 0 auto;
+    margin: 12em auto;
     img{
         width: 55vw;
-        margin-bottom: 5em;
-        @media only screen and (max-width: 375px){
-            width: 300px;
-        }
+        margin-bottom: 0;
         }
 }
 @media only screen and (max-width: 375px){
     .la-master{
         width: 375px;
         height: 275px;
-        background-image:url(./img/concept.png);
+        background-image:url(./assets/images/concept.png);
         background-repeat: no-repeat;
         background-size: 100%;
         background-position-x: 0;
@@ -67,7 +63,7 @@
         background-size: 90%;
         background-position-x: 2em;
         position: relative;
-        top: 10em;
+        top: 5em;
     }
     .la-street{
         position: relative;
@@ -84,13 +80,15 @@
         justify-content: flex-start;
         align-content: flex-start;
         background-color: #fff;
-        background-image:url(./img/concept.png);
+        background-image:url(./assets/images/concept.png);
         background-repeat: no-repeat;
         background-size: 60%;
         background-position-x: 250px;
     }
     .la-street{
-       height: 500px;
+        margin-top: 3em;
+       height: 400px;
+       margin-bottom: 3em;
     }
 }
 

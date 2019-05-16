@@ -2,13 +2,19 @@
 .googlebox{
     @include row;
     @include basic(100vw,60vh,0 auto,0);
+    position: relative;
+    top: -2em;
+    .googlelink{
+        width: 700px;
+        height: 400px;
+    }
     .google-box1{
         margin-left: 3em;
     }
     .google-box1{
         font-size: 1.5em;
         color: $color3;
-        border: $color3 solid 1px;
+        border: $color2 solid 1px;
         margin: 2em;
         padding: 2em;
         li{
@@ -27,12 +33,12 @@
         width: 375px;
     }
     .google-box1{
-        width: 95vw;
+        width: 370px;
         margin: 0;
         border: none;
     }
     .googlelink{
-        width: 100vw;
+        width: 100%;
         height: 50vh;
     }
     
@@ -40,10 +46,10 @@
 
 @media only screen and (min-width: 768px){
    .googlebox{
-       width: 100vw;
+       width: 100%;
    }
    .googlelink{
-       width: 55vw;
+       width: 60%;
    }
 }
 
