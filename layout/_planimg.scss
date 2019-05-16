@@ -6,7 +6,7 @@
     justify-content: flex-start;
     align-content: flex-start;
     background-color: #fff;
-    background-image:url(./assets/images/concept.png);
+    background-image:url(../assets/images/concept.png);
     background-repeat: no-repeat;
     background-size: 60%;
     background-position-x: 250px;
@@ -15,7 +15,7 @@
 
 .la-street{
     @include basic(55vw,80vh,0 auto,0);
-    background: url(./assets/images/swa4.jpg)  no-repeat bottom;
+    background: url(../assets/images/swa4.jpg)  no-repeat bottom;
     background-size: contain;
         p{
             display: inline-block;
@@ -43,7 +43,7 @@
     .la-master{
         width: 375px;
         height: 275px;
-        background-image:url(./assets/images/concept.png);
+        background-image:url(../assets/images/concept.png);
         background-repeat: no-repeat;
         background-size: 100%;
         background-position-x: 0;
@@ -80,7 +80,7 @@
         justify-content: flex-start;
         align-content: flex-start;
         background-color: #fff;
-        background-image:url(./assets/images/concept.png);
+        background-image:url(../assets/images/concept.png);
         background-repeat: no-repeat;
         background-size: 60%;
         background-position-x: 250px;

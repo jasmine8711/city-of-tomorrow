@@ -147,7 +147,7 @@ body {
   height: 60vh;
   margin: 0 auto;
   padding: 0;
-  background: url(./assets/images/cityplan.jpg) no-repeat center;
+  background: url(../assets/images/cityplan.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -257,7 +257,7 @@ body {
     height: 60vh;
     margin: 0 auto;
     padding: 0;
-    background: url(./assets/images/cityplan.jpg) no-repeat center;
+    background: url(../assets/images/cityplan.jpg) no-repeat center;
   }
   .la-citybox {
     display: -webkit-box;
@@ -414,7 +414,7 @@ body {
   -ms-flex-line-pack: start;
       align-content: flex-start;
   background-color: #fff;
-  background-image: url(./assets/images/concept.png);
+  background-image: url(../assets/images/concept.png);
   background-repeat: no-repeat;
   background-size: 60%;
   background-position-x: 250px;
@@ -425,7 +425,7 @@ body {
   height: 80vh;
   margin: 0 auto;
   padding: 0;
-  background: url(./assets/images/swa4.jpg) no-repeat bottom;
+  background: url(../assets/images/swa4.jpg) no-repeat bottom;
   background-size: contain;
 }
 
@@ -472,7 +472,7 @@ body {
   .la-master {
     width: 375px;
     height: 275px;
-    background-image: url(./assets/images/concept.png);
+    background-image: url(../assets/images/concept.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position-x: 0;
@@ -517,7 +517,7 @@ body {
     -ms-flex-line-pack: start;
         align-content: flex-start;
     background-color: #fff;
-    background-image: url(./assets/images/concept.png);
+    background-image: url(../assets/images/concept.png);
     background-repeat: no-repeat;
     background-size: 60%;
     background-position-x: 250px;
